@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <form action="" method="post" class="login">
+        <h2>تسجيل الدخول</h2>
+        <% if (log==="false" ) { %>
+            <p class="auth">اسم المستخدم او كلمه المرور غير صحيحه</p>
+            <% } %>
+
+                <% if (create ) { %>
+                    <p class="done">تم انشاء مستخدم جديد يمكنك تسجيل الدخول</p>
+                    <% } %>
+                        <input type="text" name="username" placeholder="UserName">
+                        <input type="text" name="password" placeholder="Password">
+                        <input type="submit" value="تسجيل الدخول" class="btn">
+                        <p>جديد في هذا الموقع ? <a href="/register">انشىء حساب جديد</a></p>
+    </form>
+</body>
+
+</html>

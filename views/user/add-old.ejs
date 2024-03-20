@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="icon"
+      type="image/jpg"
+      sizes="32x32"
+      href="../IMG_20231023_215755_053.jpg"
+    />
+  </head>
+
+  <body>
+    <section class="add">
+      <form action="/add-old/<%= obj._id %>" method="post">
+        <input
+          style="display: none"
+          type="text"
+          name="type"
+          value="<%= type %>"
+        />
+        <div>
+          <label for="name">اسم المساهم #اختياري</label>
+          <textarea name="name" id="name" placeholder="ادخل اسمك">
+<%= obj.name  %></textarea
+          >
+        </div>
+        <div>
+          <label for="quest">السؤال</label>
+          <textarea name="quest" id="quest" placeholder="السؤال">
+<%= obj.quest  %></textarea
+          >
+        </div>
+        <div>
+          <label for="ans1"> الجواب الاول</label>
+          <textarea name="ans1" id="ans1" placeholder="الجواب الاول">
+<%= obj.ans1  %></textarea
+          >
+        </div>
+        <div>
+          <label for="ans2"> الجواب الثاني</label>
+          <textarea name="ans2" id="ans2" placeholder="الجواب الثاني">
+<%= obj.ans2  %></textarea
+          >
+        </div>
+        <div>
+          <label for="ans3"> الجواب الثالث</label>
+          <textarea name="ans3" id="ans3" placeholder="الجواب الثالث">
+<%= obj.ans3  %></textarea
+          >
+        </div>
+        <div>
+          <label for="ans4"> الجواب الرابع</label>
+          <textarea name="ans4" id="ans4" placeholder="الجواب الرابع">
+<%= obj.ans4  %></textarea
+          >
+        </div>
+        <div>
+          <label for="ans5"> الجواب الخامس</label>
+          <textarea name="ans5" id="ans5" placeholder="الجواب الخامس">
+<%= obj.ans5  %></textarea
+          >
+        </div>
+        <div>
+          <label for="number"> رقم الجواب الصحيح</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            value="<%= obj.number  %>"
+          />
+        </div>
+        <div class="button">
+          <button type="submit">تعديل</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

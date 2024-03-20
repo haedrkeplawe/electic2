@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="icon"
+      type="image/jpg"
+      sizes="32x32"
+      href="../IMG_20231023_215755_053.jpg"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include('../component/nav.ejs') %>
+    <!-- title  -->
+    <div class="mainTitle">
+      <h2><%= type %></h2>
+    </div>
+    <form action="/add" method="get">
+      <input
+        style="display: none"
+        name="type"
+        type="text"
+        value="<%= type %>"
+      />
+      <button class="main-add" type="submit">ساهم باضافه سؤال</button>
+    </form>
+    <!-- title  -->
+    <!-- contaienr -->
+    <section>
+      <div class="contaienr"><%- include('../component/quest.ejs') %></div>
+    </section>
+    <!-- contaienr -->
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

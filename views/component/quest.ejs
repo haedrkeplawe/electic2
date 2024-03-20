@@ -1,0 +1,62 @@
+<% let index = 0 %> <% arr.forEach((item) => { %> <% if (type === item.type) {
+%>
+<div class="box">
+  <h2>
+    <span><%= ++index %></span>
+    <%= item.quest %>
+  </h2>
+  <h4 data-id="<%= item._id %>" data-name="1"><%= item.ans1 %></h4>
+  <h4 data-id="<%= item._id %>" data-name="2"><%= item.ans2 %></h4>
+  <h4 data-id="<%= item._id %>" data-name="3"><%= item.ans3 %></h4>
+  <h4 data-id="<%= item._id %>" data-name="4"><%= item.ans4 %></h4>
+  <h4 data-id="<%= item._id %>" data-name="5"><%= item.ans5 %></h4>
+  <div style="display: flex; flex-direction: row-reverse">
+    <div class="button">
+      <button data-id="<%= item._id %>" data-name="<%= item.number %>">
+        تحقق
+      </button>
+    </div>
+    <div class="button">
+      <form action="/delete/<%= item._id %>" method="post">
+        <input
+          style="display: none"
+          type="text"
+          name="type"
+          value="<%= item.type %>"
+        />
+        <button
+          type="submit"
+          style="background-color: red"
+          data-name="<%= item.number %>"
+        >
+          delet
+        </button>
+      </form>
+    </div>
+    <div class="button">
+      <form action="/add-old/<%= item._id %>" method="get">
+        <input
+          style="display: none"
+          type="text"
+          name="type"
+          value="<%= item.type %>"
+        />
+        <button
+          type="submit"
+          style="background-color: green"
+          data-name="<%= item.number %>"
+        >
+          update
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="name">
+    !
+    <span
+      >:المساهم<br />
+      <%= item.name %>
+    </span>
+  </div>
+</div>
+<% } %> <% }) %>

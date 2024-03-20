@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+p {
+    color: #757575;
+}
+.contact-main {
+    background: #f9f9f9;
+    padding: 3rem 0rem;
+}
+h3.main-title {
+    padding: 3rem 0rem;
+    font-weight: 100;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 8rem;
+}
+.title-main {
+    max-width: 940px;
+    margin: auto;
+    padding: 0rem 1rem;
+}
+.title-main h1 {
+    font-weight: 100;
+    color: #333;
+}
+.title-main p {
+    padding: 0.2rem 0.7rem;
+}
+button, .btn {
+    background: #000;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding: 14px 35px;
+    border: 2px solid black;
+}
+/* login */
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem;
+    border: 1px solid #ddd;
+    max-width: 577px;
+    margin: 3rem auto;
+    gap: 0.2rem;
+    text-align: center;
+}
+.login h2 {
+    font-weight: 100;
+    padding: 2rem 0rem;
+    font-size: 1.6rem;
+}
+.login .auth {
+    background: #f70c0cc7;
+    color: wheat;
+    padding: 10px;
+    margin: 20px;
+}
+.login .done {
+    background: #19ca34c7;
+    color: wheat;
+    padding: 10px;
+    margin: 20px;
+}
+.login input {
+    border: 1px solid #dedede;
+    margin-bottom: 0.6rem;
+    width: 85%;
+    padding: 1rem;
+    outline: none;
+}
+.login .btn {
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 11px 39px;
+    width: fit-content;
+    border: 1px solid black;
+    margin: 1rem 0rem;
+}
